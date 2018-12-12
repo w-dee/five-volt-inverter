@@ -2767,8 +2767,8 @@ $Comp
 L Relay:Y14x-1C-xxDS K1
 U 1 1 5BFFD01E
 P 5800 1250
-F 0 "K1" H 6230 1296 50  0000 L CNN
-F 1 "953-1C-5DG-1" H 6230 1205 50  0000 L CNN
+F 0 "K1" H 5750 950 50  0000 L CNN
+F 1 "953-1C-5DG-1" H 5750 850 50  0000 L CNN
 F 2 "thisproject:953-1C-5DG-1" H 6250 1200 50  0001 L CNN
 F 3 "http://www.hsinda.com.cn/en/imgdown.asp?FileName=UploadFiles/201431310240386.pdf" H 5800 1250 50  0001 C CNN
 	1    5800 1250
@@ -4073,7 +4073,7 @@ U 1 1 5C15B073
 P 7200 2700
 F 0 "Q5" H 7328 2746 50  0000 L CNN
 F 1 "BTA24-600CW" H 7328 2655 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 7400 2625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7400 2625 50  0001 L CIN
 F 3 "http://pdf.datasheetcatalog.com/datasheet/PowerInnovations/mXuqxvy.pdf" H 7200 2700 50  0001 L CNN
 	1    7200 2700
 	1    0    0    -1  
