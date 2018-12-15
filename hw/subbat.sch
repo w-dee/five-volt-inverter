@@ -42,7 +42,7 @@ U 1 1 5BE40159
 P 2250 5100
 F 0 "F3" H 2318 5146 50  0000 L CNN
 F 1 "3A hold" H 2318 5055 50  0000 L CNN
-F 2 "Fuse:Fuse_Bourns_MF-RG800" H 2300 4900 50  0001 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG700" H 2300 4900 50  0001 L CNN
 F 3 "" H 2250 5100 50  0001 C CNN
 	1    2250 5100
 	0    -1   -1   0   
@@ -148,7 +148,7 @@ U 1 1 5C07B499
 P 2600 5950
 F 0 "SW2" H 2600 6265 50  0000 C CNN
 F 1 "SW_SPDT_WITH_SHIELD" H 2600 6174 50  0000 C CNN
-F 2 "components:SW_SPDT_WITH_SHILD" H 2600 5950 50  0001 C CNN
+F 2 "components:SW_SPDT_v" H 2600 5950 50  0001 C CNN
 F 3 "" H 2600 5950 50  0001 C CNN
 	1    2600 5950
 	-1   0    0    -1  
@@ -863,7 +863,7 @@ U 1 1 5C0FFC35
 P 2250 5200
 F 0 "F4" H 2318 5246 50  0000 L CNN
 F 1 "3A hold" H 2318 5155 50  0000 L CNN
-F 2 "Fuse:Fuse_Bourns_MF-RG800" H 2300 5000 50  0001 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG700" H 2300 5000 50  0001 L CNN
 F 3 "" H 2250 5200 50  0001 C CNN
 	1    2250 5200
 	0    1    1    0   
@@ -3036,7 +3036,7 @@ U 1 1 5C03A7F2
 P 7950 2050
 F 0 "R26" V 7750 2050 50  0000 C CNN
 F 1 "100R" V 7850 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L48.0mm_W12.5mm_P55.88mm" V 8063 2050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P27.94mm" V 8063 2050 50  0001 C CNN
 F 3 "~" H 7950 2050 50  0001 C CNN
 	1    7950 2050
 	0    -1   1    0   
@@ -3065,23 +3065,23 @@ AC_OUT_L
 $Comp
 L Connector:Conn_WallPlug P1
 U 1 1 5C0508C7
-P 9050 900
-F 0 "P1" H 8840 946 50  0000 R CNN
-F 1 "Conn_WallPlug" H 8840 855 50  0000 R CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 9450 900 50  0001 C CNN
-F 3 "~" H 9450 900 50  0001 C CNN
-	1    9050 900 
+P 9450 900
+F 0 "P1" H 9240 946 50  0000 R CNN
+F 1 "Conn_WallPlug" H 9240 855 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 9850 900 50  0001 C CNN
+F 3 "~" H 9850 900 50  0001 C CNN
+	1    9450 900 
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_WallSocket J6
 U 1 1 5C05103E
-P 9050 1650
-F 0 "J6" H 9204 1696 50  0000 L CNN
-F 1 "Conn_WallSocket" H 9204 1605 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 8650 1650 50  0001 C CNN
-F 3 "~" H 8650 1650 50  0001 C CNN
-	1    9050 1650
+P 9450 1650
+F 0 "J6" H 9604 1696 50  0000 L CNN
+F 1 "Conn_WallSocket" H 9604 1605 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 9050 1650 50  0001 C CNN
+F 3 "~" H 9050 1650 50  0001 C CNN
+	1    9450 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3096,11 +3096,7 @@ F 3 "~" H 8050 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8850 800  8250 800 
-Wire Wire Line
 	8250 800  8250 850 
-Wire Wire Line
-	8850 1000 8250 1000
 Wire Wire Line
 	8250 1000 8250 950 
 $Comp
@@ -3151,8 +3147,6 @@ Text Label 9100 2050 2    50   ~ 0
 AC_OUT_L
 Wire Wire Line
 	8100 2050 9100 2050
-Wire Wire Line
-	8850 1750 8250 1750
 Wire Wire Line
 	8250 1750 8250 1000
 Connection ~ 8250 1000
@@ -4197,4 +4191,27 @@ Wire Wire Line
 Connection ~ 6500 1550
 Wire Wire Line
 	6500 1550 7000 1550
+$Comp
+L Device:Fuse_Small F14
+U 1 1 5C1B838A
+P 9050 1550
+F 0 "F14" H 9050 1735 50  0000 C CNN
+F 1 "15A" H 9050 1644 50  0000 C CNN
+F 2 "components:FUSE-HOLDER-FUC-03A-20mm_x_5.2mm" H 9050 1550 50  0001 C CNN
+F 3 "~" H 9050 1550 50  0001 C CNN
+	1    9050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1000 9250 1000
+Wire Wire Line
+	8250 800  9250 800 
+Wire Wire Line
+	8950 1550 8850 1550
+Wire Wire Line
+	9150 1550 9250 1550
+Wire Wire Line
+	8250 1750 9250 1750
+Text Label 9200 1550 1    50   ~ 0
+AC_OUT_L_2
 $EndSCHEMATC
